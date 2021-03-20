@@ -14,6 +14,3 @@ def index_test_post():
     insertValues = request.get_json()
     value = insertValues['value']
     return jsonify({'return': str(value)})
-
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=3000, debug=False)
