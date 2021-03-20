@@ -5,5 +5,5 @@ import requests
 # print(obj['edges'])
 
 json_format = {'value':123}
-obj = requests.post('http://0.0.0.0:3000/test_post',json=json_format)
-print(obj.text)
+obj = requests.post('https://hsucheng-api-test.herokuapp.com/test_post',json=json_format)
+print(type(obj.))
